@@ -1,0 +1,29 @@
+[env]
+EDITOR = "nvim"
+ZSTD_CLEVEL = "19"
+ZSTD_NBTHREADS = "1"
+
+[settings.github]
+credential_command = "gh auth token"
+
+[tools]
+bat = "latest"
+cmake = "latest"
+delta = "latest"
+deno = "latest"
+fastfetch = "latest"
+gh = "latest"
+"github:BLAKE3-team/BLAKE3" = "latest"
+"github:xwmx/nb" = "latest"
+helix = "latest"
+jq = "latest"
+lefthook = "latest"
+lsd = "latest"
+ninja = "latest"
+ripgrep = "latest"
+shfmt = "latest"
+tombi = "latest"
+usage = "latest"
+watchexec = "latest"
+yamlfmt = "latest"
+yt-dlp = { version = "latest", rename_exe = "yt-dlp" }
