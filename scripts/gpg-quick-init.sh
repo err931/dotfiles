@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # SPDX-FileCopyrightText: 2026 Minoru Maekawa
 #
@@ -7,7 +7,7 @@
 set -euo pipefail
 
 gpg --quick-gen-key "Lorem Ipsum <lorem@example.com>" default cert 0
-gpg --list-keys &>/dev/null
+gpg --list-keys >/dev/null 2>&1
 
 KEY_FPR=$(gpg --list-secret-keys --with-colons | awk -F: '$1 == "fpr" {print $10}')
 gpg --quick-add-key $KEY_FPR default encr 0

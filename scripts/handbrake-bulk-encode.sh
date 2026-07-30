@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # SPDX-FileCopyrightText: 2026 Minoru Maekawa
 #
@@ -6,8 +6,9 @@
 
 set -euo pipefail
 
-shopt -s nullglob
 for input_file in *.iso; do
+	[ -e "$input_file" ] || continue
+
 	tmp_file=$(mktemp)
 	output_file="${input_file%%.*}.mp4"
 
