@@ -9,15 +9,32 @@ set -euo pipefail
 GIT_CONFIG_DIR="${XDG_CONFIG_HOME:=$HOME/.config}"
 install -Dm644 /dev/null "$GIT_CONFIG_DIR/git/config"
 cat <<EOS >"$GIT_CONFIG_DIR/git/ignore"
-# Backup files
+# Generic backup files
 *.bak
+*.back
+*.backup
+
+# Norton Ghost backup files
 *.gho
+
+# Generic original files
 *.ori
 *.orig
-*.tmp
+*.original
 
-# mise local config file
+# Generic temporary files
+*.tmp
+*.temp
+*.temporary
+
+# https://mise.jdx.dev/configuration.html
+# https://mise.jdx.dev/configuration/environments.html
+.mise.*.local.toml
+.mise.local.toml
+mise.*.local.toml
 mise.local.toml
+.mise/*.local.toml
+mise/*.local.toml
 EOS
 
 xargs -L1 git config --global <<EOS
