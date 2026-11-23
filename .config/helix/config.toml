@@ -1,0 +1,36 @@
+theme = "adwaita-dark"
+
+[editor]
+color-modes = true
+completion-replace = true
+completion-timeout = 5
+cursorline = true
+default-yank-register = "+"
+end-of-line-diagnostics = "hint"
+text-width = 120
+trim-final-newlines = true
+trim-trailing-whitespace = true
+true-color = true
+undercurl = true
+
+[editor.lsp]
+display-progress-messages = true
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+after-delay.timeout = 30000
+
+[editor.statusline]
+center = ["version-control"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"

@@ -1,0 +1,34 @@
+[dotfiles]
+"~/.bash_logout" = {}
+"~/.bashrc" = {}
+"~/.config" = { mode = "symlink-each" }
+"~/.profile" = {}
+
+[env]
+EDITOR = "nvim"
+LESSHISTFILE = "/dev/null"
+ZSTD_CLEVEL = 19
+ZSTD_NBTHREADS = 1
+
+[settings]
+experimental = true
+
+[tools]
+age = "latest"
+"aqua:goshs-labs/goshs" = "latest"
+bat = "latest"
+cmake = "latest"
+delta = "latest"
+deno = "latest"
+fastfetch = "latest"
+gh = "latest"
+helix = "latest"
+jq = "latest"
+lsd = "latest"
+ninja = "latest"
+ripgrep = "latest"
+shfmt = "latest"
+tombi = "latest"
+watchexec = "latest"
+yamlfmt = "latest"
+yt-dlp = "latest"
